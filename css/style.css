@@ -17,10 +17,6 @@
   color: black;
 }
 
-.texte-gras {
-  font-weight: 700px;
-}
-
 body {
   display: flex;
   margin-top: 0px;
@@ -39,8 +35,32 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
 .section-title {
-  margin: 0;
+  margin: 0px;
   font-size: 22px;
 }
 
@@ -141,7 +161,6 @@ a {
 }
 
 .searchbar-button {
-  font-weight: 700;
   background-color: var(--main-color);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -157,16 +176,53 @@ a {
   display: none;
 }
 
-.infos .filters {
+.filters {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.filters-title {
+  margin: 0;
+}
+
+.filter-button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 25px;
+  align-items: center;
+  border: solid 2px var(--main-bg-color);
+}
+
+.filter-button:hover {
+  background-color: var(--filter-bg-color);
 }
 
 /****** InfoBar ***********/
 .infoBar {
   display: flex;
   flex-direction: row;
+  gap: 10px;
+}
+
+.infoBar-icon {
+  display: flex;
+
+  width: 24px;
+  height: 24px;
+  border: solid 1px #d9d9d9;
+  border-radius: 50%;
+}
+
+.fa-info {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
