@@ -399,8 +399,6 @@ main {
   border-top-right-radius: 20px;
 }
 
-/* TODO quoi faire avec le texte sur 2 lignes      ellipse ?*/
-
 .activities-cards .card-title {
   padding: 20px 19px 20px 19px;
 }
@@ -629,6 +627,7 @@ footer {
   }
 
   .hebergements-cards .card {
+    max-width: none;
     width: 100%;
   }
 
